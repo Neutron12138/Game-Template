@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=3 uid="uid://yj7cwo1y55lv"]
+
+[ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_xjckf"]
+
+[node name="StartMenu" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_xjckf")
+
+[node name="game_name" type="Label" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "TEXT_GAME_NAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="margin" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 50
+
+[node name="box" type="HBoxContainer" parent="margin"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="left_column" type="VBoxContainer" parent="margin/box"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="plugins" type="Button" parent="margin/box/left_column"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "TEXT_STARTMENU_PLUGINS"
+
+[node name="center_column" type="VBoxContainer" parent="margin/box"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="start" type="Button" parent="margin/box/center_column"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "TEXT_STARTMENU_START"
+
+[node name="settings" type="Button" parent="margin/box/center_column"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "TEXT_STARTMENU_SETTINGS"
+
+[node name="exit" type="Button" parent="margin/box/center_column"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "TEXT_STARTMENU_EXIT"
+
+[node name="right_column" type="VBoxContainer" parent="margin/box"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="more" type="Button" parent="margin/box/right_column"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "TEXT_STARTMENU_MORE"
+
+[node name="about" type="Button" parent="margin/box/right_column"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "TEXT_STARTMENU_ABOUT"

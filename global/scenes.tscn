@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://bn5cbxibctljn"]
+
+[ext_resource type="PackedScene" uid="uid://yj7cwo1y55lv" path="res://scenes/start_menu.tscn" id="1_gk001"]
+[ext_resource type="Script" path="res://global/scenes.gd" id="1_nf6j0"]
+[ext_resource type="PackedScene" uid="uid://d0830rxaylhcf" path="res://scenes/settings.tscn" id="3_88ihs"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_nf6j0")
+
+[node name="start_menu" parent="." instance=ExtResource("1_gk001")]
+visible = false
+
+[node name="settings" parent="." instance=ExtResource("3_88ihs")]

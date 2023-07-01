@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://wfv4w6wtb04s"]
+
+[ext_resource type="Script" path="res://scripts/selecting_game.gd" id="1_qubay"]
+
+[node name="SelectingGame" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qubay")
+
+[node name="label" type="Label" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "TEXT_SELECTINGGAME_LABEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="list" type="ItemList" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="actions" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="start" type="Button" parent="actions"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "TEXT_SELECTINGGAME_START"
+
+[node name="new" type="Button" parent="actions"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "TEXT_SELECTINGGAME_NEW"
+
+[node name="delete" type="Button" parent="actions"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "TEXT_SELECTINGGAME_DELETE"
+
+[node name="more" type="Button" parent="actions"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "TEXT_SELECTINGGAME_MORE"

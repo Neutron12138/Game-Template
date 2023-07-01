@@ -1,0 +1,4 @@
+res://scenes/settings.tscn
+res://scripts/settings.gd
+res://scenes/selecting_game.tscn
+res://scripts/selecting_game.gd
